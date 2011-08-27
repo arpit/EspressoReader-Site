@@ -4,6 +4,59 @@
 		<title>EspressoReader | Supercharge your Google Reader</title>
 		<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				
+				var messages = [
+					{msg:"Para los que no tenemos un iPad, espresso reader (http://espressoreader.com) es lo mas parecido al Flipboard", name:"Fabricio Olivera", twitterProfile: "folivera "},
+					{msg:"Found my second best useful AIR app #espressoreader http://bit.ly/bzi1rA , next to TweetDeck for regular use.",name:"Safiullah Khan", twitterProfile:"s4f1 "},
+					{msg:"If anyone is into RSS feeds then you'll like Espresso Reader, just downloaded it. Beautiful layout of feeds, makes it easy to read. :)", name:"Dimitri Thevenin", twitterProfile:"Dimitri611"},
+					{msg:"EspressoReader: Awesome GoogleReader Reader", name:"Mike D", twitterProfile:"SMD2008"}
+					]
+				
+				var quotes_index = 0;
+				var showNextOrPrev = function(increment){
+					
+					$("#quote_box").fadeOut("slow", function(){
+						
+						quotes_index = quotes_index+increment;
+						if(quotes_index == messages.length){
+							quotes_index=0;
+						}
+						if(quotes_index < 0){
+							quotes_index=messages.length-1;
+						}
+						
+						
+						
+						var ob = messages[quotes_index];
+						$(".quote").text(ob.msg);
+						$(".quote_via").html(ob.name+" (<a href='twitter.com/"+ob.twitterProfile+"' class='twitter_link'>"+ob.twitterProfile+"</a>) via Twitter");
+						
+						$("#quote_box").fadeIn("slow");
+					});
+				}
+				
+				var intv = setInterval(function(){
+					showNextOrPrev(1)
+				},8000);
+				
+				$("#prev_quote").click(function(){
+					clearInterval(intv);
+					showNextOrPrev(-1);
+					return false;
+				});
+				
+				$("#next_quote").click(function(){
+					clearInterval(intv);
+					showNextOrPrev(1);
+					return false;
+				});
+				
+				
+			})
+		</script>
 	</head>
 	<body>
 		
@@ -63,12 +116,19 @@
 				</div>
 				<div class="section" id="other_sayings">
 					<h3>What others are saying</h3>
-					
-					<p class="quote">
-						Found my second best useful AIR app #espressoreader http://bit.ly/bzi1rA , next to TweetDeck for regular use.
-					</p>
-					<p class="quote_via">Arpit (@arpit) via Twitter </p>
-					
+					<div id="quote_holder">
+						
+						<div id="quote_box">
+							<p class="quote">
+								Found my second best useful AIR app #espressoreader http://bit.ly/bzi1rA , next to TweetDeck for regular use.
+							</p>
+							<p class="quote_via">Arpit (@arpit) via Twitter </p>
+						</div>
+						
+						<a id="prev_quote" class="quote_nav" href="#"> < </a>
+						<a id="next_quote" class="quote_nav" href="#"> > </a>
+						
+					</div>
 						
 				</div>
 			</div>

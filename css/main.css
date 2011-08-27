@@ -158,7 +158,17 @@ h3{
     margin-top:20px;
 }
 
+#quote_holder{
+   height:240px; 
+   position:relative;
+}
+
+#quote_box{
+    padding:0 40px;
+}
+
 .quote{
+   float:left;
    font-family: 'Coustard', serif; 
    padding:20px;
    font-size:28px; 
@@ -178,6 +188,26 @@ h3{
     background:white;
     padding:5px 20px;
     margin-bottom:20px;
+}
+
+.quote_nav{
+    padding:5px 12px;
+    background:white;
+    position:absolute;
+    top:60px;
+    border-radius:20px;
+}
+
+.quote_nav:hover{
+    background:#F8B623;
+}
+
+#prev_quote{
+    left:0;
+}
+
+#next_quote{
+    right:0;
 }
 
 #footer{
