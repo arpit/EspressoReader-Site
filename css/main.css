@@ -10,7 +10,13 @@ body{
 
 a{
     text-decoration:none;
-    color:#333;
+}
+
+.action_button{
+    text-decoration:none;
+    padding:2px 5px;
+    background-color:#0099FF;
+    color:#fff;
 }
 
 #header{
@@ -37,6 +43,11 @@ a{
     border-bottom:2px solid #F8B623;
     padding:5px;
     height:20px;
+}
+
+#nav_links a:hover{
+    background:#F8B623;
+    color:#333;
 }
 
 #main_title{
@@ -76,6 +87,7 @@ a{
 #promo_text{
     text-align:center;
     padding:20px;
+    color:#2F2F2F;
 }
 
 #download_container{
@@ -105,6 +117,7 @@ a{
     border:1px solid #F8B623;
     border-radius:5px;
     box-shadow: 0px 1px 1px #333;
+    color:#333;
     
 }
 
@@ -136,6 +149,7 @@ h3{
     border-top:1px dotted #333;
     padding-left:20px;
     background:#B6B5AC;
+    color:#2F2F2F;
 }
 
 .feature_container{
@@ -147,6 +161,7 @@ h3{
 .feature_container h4{
     font-family: 'Coustard', serif; 
     text-shadow: 0px 2px 3px #fff;
+    color:#2F2F2F;
 }
 
 .feature_container p{
@@ -176,6 +191,7 @@ h3{
    margin:20px 0;
    background:#B6B5AC;
    border-radius:5px;
+   color:#2F2F2F;
 }
 
 .quote_via{
@@ -188,6 +204,7 @@ h3{
     background:white;
     padding:5px 20px;
     margin-bottom:20px;
+    color:#2F2F2F;
 }
 
 .quote_nav{
@@ -196,6 +213,7 @@ h3{
     position:absolute;
     top:60px;
     border-radius:20px;
+    color:#333;
 }
 
 .quote_nav:hover{
