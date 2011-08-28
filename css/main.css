@@ -90,6 +90,13 @@ a{
     color:#2F2F2F;
 }
 
+#promo_text p{
+    font-family: 'Coustard', serif;
+    font-size:26px;
+    text-shadow: 0px 2px 3px #fff;
+    text-align:left;
+}
+
 #download_container{
     border-bottom:1px dotted #333;
     border-top:1px dotted #333; 
@@ -125,14 +132,6 @@ a{
    
 }
 
-
-#promo_text p{
-    font-family: 'Coustard', serif;
-    font-size:26px;
-    text-shadow: 0px 2px 3px #fff;
-    text-align:left;
-}
-
 #images{
     padding:20px;
 }
@@ -143,7 +142,7 @@ a{
 
 h3{
     font-family: 'Coustard', serif; 
-    text-shadow: 0px 2px 3px #fff;
+    text-shadow: 0px 1px 3px #fff;
     font-size:26px;
     font-weight:normal;
     border-top:1px dotted #333;
@@ -160,7 +159,7 @@ h3{
 
 .feature_container h4{
     font-family: 'Coustard', serif; 
-    text-shadow: 0px 2px 3px #fff;
+    text-shadow: 0px 1px 3px #fff;
     color:#2F2F2F;
 }
 
@@ -197,7 +196,6 @@ h3{
 .quote_via{
     font-family: 'Coustard', serif; 
     font-size:22px; 
-    text-shadow: 0px 2px 3px #fff;
     float:right;  
     margin-top:-30px; 
     margin-right:40px;
