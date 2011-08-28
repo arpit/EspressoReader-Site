@@ -117,14 +117,15 @@ a{
     padding:5px 20px;
     font-family: 'Coustard', serif;
     font-size:24px;
-    text-shadow: 0px 2px 3px #fff;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F8B623', endColorstr='#FED63B'); /* for IE */
        background: -webkit-gradient(linear, left top, left bottom, from(#F8B623), to(#FED63B)); /* for webkit browsers */
        background: -moz-linear-gradient(top,  #F8B623,  #FED63B);
     border:1px solid #F8B623;
     border-radius:5px;
-    box-shadow: 0px 1px 1px #333;
+    box-shadow: 0px 1px 1px #0000;
     color:#333;
+    text-shadow: 0px 1px 3px #fff;
+    
     
 }
 
@@ -159,12 +160,16 @@ h3{
 
 .feature_container h4{
     font-family: 'Coustard', serif; 
-    text-shadow: 0px 1px 3px #fff;
+    background:white;
+    padding:2px 5px;
+    float:left;
     color:#2F2F2F;
 }
 
 .feature_container p{
-    color:#555;
+    color:#434343;
+    clear:both;
+    padding-top:5px;
 }
 
 .section{
@@ -186,7 +191,7 @@ h3{
    font-family: 'Coustard', serif; 
    padding:20px;
    font-size:28px; 
-   text-shadow: 0px 2px 3px #fff;
+   text-shadow: 0px 1.5px 3px #fff;
    margin:20px 0;
    background:#B6B5AC;
    border-radius:5px;
